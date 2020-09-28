@@ -6,6 +6,13 @@
 </head>
 <body>
 <h1>Titanic - This is a machine learning project
-    <h2>you can predict if a passenger would have survived</h2>
+    <h2>You can predict if a passenger would have survived</h2>
+    <p>Enter a passenger details here , and get your prediction now  </p>
+    <form action="{% url 'result' %}" >
+        {% csrf_token %}
+        <p>age:</p>
+        <input type="text" name="age">
+        <input type="submit" >
+
 </body>
 </html>
